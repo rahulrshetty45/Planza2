@@ -24,15 +24,36 @@ class ManusAutomationService {
   private aiComplete: boolean;
   private uploadedFiles: Array<{signedCdnUrl: string; fileName: string; fileSize: number; originalName: string}>;
   private progressCallback: ((progress: any) => void) | null;
+  private userCountry: string;
 
-  constructor() {
+  constructor(userCountry = 'US') {
+    this.userCountry = userCountry;
+    
+    // Determine timezone based on country
+    let timezone = 'America/New_York'; // Default to US Eastern
+    let timezoneOffset = '-300'; // Default to UTC-5
+    
+    if (userCountry === 'IN') {
+      timezone = 'Asia/Calcutta';
+      timezoneOffset = '-330';
+    } else if (userCountry === 'GB' || userCountry === 'UK') {
+      timezone = 'Europe/London';
+      timezoneOffset = '0';
+    } else if (userCountry === 'CA') {
+      timezone = 'America/Toronto';
+      timezoneOffset = '-300';
+    } else if (userCountry === 'AU') {
+      timezone = 'Australia/Sydney';
+      timezoneOffset = '600';
+    }
+    
     this.headers = {
       'authorization': `Bearer ${CONFIG.JWT_TOKEN}`,
       'content-type': 'application/json',
       'x-client-id': CONFIG.CLIENT_ID,
       'x-client-locale': 'en',
-      'x-client-timezone': 'Asia/Calcutta',
-      'x-client-timezone-offset': '-330',
+      'x-client-timezone': timezone,
+      'x-client-timezone-offset': timezoneOffset,
       'x-client-type': 'web',
       'connect-protocol-version': '1',
       'accept': '*/*',
@@ -79,6 +100,24 @@ class ManusAutomationService {
   async activateAgentMode() {
     this.sendProgress('uploading', 5, 'Activating AI agent mode...');
     
+    // Determine timezone settings for agent mode based on user country
+    let timezone = 'America/New_York';
+    let timezoneOffset = -300;
+    
+    if (this.userCountry === 'IN') {
+      timezone = 'Asia/Calcutta';
+      timezoneOffset = -330;
+    } else if (this.userCountry === 'GB' || this.userCountry === 'UK') {
+      timezone = 'Europe/London';
+      timezoneOffset = 0;
+    } else if (this.userCountry === 'CA') {
+      timezone = 'America/Toronto';
+      timezoneOffset = -300;
+    } else if (this.userCountry === 'AU') {
+      timezone = 'Australia/Sydney';
+      timezoneOffset = 600;
+    }
+    
     try {
       await axios.post(
         'https://api.manus.im/api/user_behavior/batch_create_event_v2',
@@ -95,8 +134,8 @@ class ManusAutomationService {
             client_type: "web",
             client_locale: "en",
             product_name: "Manus",
-            timezone: "Asia/Calcutta",
-            timezone_offset: -330,
+            timezone: timezone,
+            timezone_offset: timezoneOffset,
             tm_token: "25b2139e15b22108ab581e9112551948"
           }
         },
@@ -175,14 +214,26 @@ class ManusAutomationService {
     return this.uploadedFiles;
   }
 
-  async connectAndProcess(prompt) {
+  async connectAndProcess(prompt, userCountry = 'US') {
     this.sendProgress('reading', 30, 'Connecting to AI processor...');
+
+    // Determine timezone for WebSocket connection
+    let timezone = 'America/New_York';
+    if (userCountry === 'IN') {
+      timezone = 'Asia/Calcutta';
+    } else if (userCountry === 'GB' || userCountry === 'UK') {
+      timezone = 'Europe/London';
+    } else if (userCountry === 'CA') {
+      timezone = 'America/Toronto';
+    } else if (userCountry === 'AU') {
+      timezone = 'Australia/Sydney';
+    }
 
     this.socket = SocketIOClient('wss://api.manus.im/', {
       query: {
         token: CONFIG.JWT_TOKEN,
         locale: 'en',
-        tz: 'Asia/Calcutta',
+        tz: timezone,
         clientType: 'web'
       },
       transports: ['websocket'],
@@ -220,7 +271,7 @@ class ManusAutomationService {
       taskMode: "agent",
       attachments: attachments, // Multi-file support
       extData: { mode: "lite" },
-      countryIsoCode: "IN"
+      countryIsoCode: userCountry
     };
 
     this.socket.emit("message", message);
@@ -446,13 +497,60 @@ class ManusAutomationService {
   }
 }
 
+async function getUserCountryCode(request: NextRequest): Promise<string> {
+  try {
+    // Check for manual override first
+    const forceCountry = process.env.FORCE_COUNTRY_CODE;
+    if (forceCountry) {
+      console.log(`Using forced country code: ${forceCountry}`);
+      return forceCountry;
+    }
+    
+    // Try to get country from headers (if behind a proxy like Cloudflare)
+    const cfCountry = request.headers.get('cf-ipcountry');
+    if (cfCountry && cfCountry !== 'XX') {
+      return cfCountry;
+    }
+    
+    // Try to get from X-Forwarded-For header
+    const forwardedFor = request.headers.get('x-forwarded-for');
+    const clientIP = forwardedFor ? forwardedFor.split(',')[0].trim() : 
+                     request.headers.get('x-real-ip') || 
+                     'unknown';
+    
+    // If we can't detect, default to US (which seems to work with your VPN)
+    if (clientIP === 'unknown' || clientIP.startsWith('192.168.') || clientIP.startsWith('10.') || clientIP === '127.0.0.1') {
+      return 'US'; // Default to US for local/private IPs
+    }
+    
+    // Try to detect country from IP using a free API
+    const response = await fetch(`https://ipapi.co/${clientIP}/country/`, {
+      headers: { 'User-Agent': 'Planza-Takeoff-Platform' }
+    });
+    
+    if (response.ok) {
+      const country = await response.text();
+      return country.trim().toUpperCase() || 'US';
+    }
+    
+    return 'US'; // Fallback to US
+  } catch (error) {
+    console.warn('Could not detect user country, defaulting to US:', error);
+    return 'US'; // Fallback to US
+  }
+}
+
 export async function POST(request: NextRequest) {
   const encoder = new TextEncoder();
   let automationService: ManusAutomationService | null = null;
 
   const stream = new ReadableStream({
-    start(controller) {
-      automationService = new ManusAutomationService();
+    async start(controller) {
+      // Detect user's country first
+      const userCountry = await getUserCountryCode(request);
+      console.log(`Detected user country: ${userCountry}`);
+      
+      automationService = new ManusAutomationService(userCountry);
       
       // Set up progress callback for Server-Sent Events
       automationService.setProgressCallback((progress) => {
@@ -461,7 +559,7 @@ export async function POST(request: NextRequest) {
       });
 
       // Process the request
-      processRequest(request, automationService, controller, encoder);
+      processRequest(request, automationService, controller, encoder, userCountry);
     },
     
     cancel() {
@@ -484,7 +582,8 @@ async function processRequest(
   request: NextRequest, 
   service: ManusAutomationService, 
   controller: ReadableStreamDefaultController,
-  encoder: TextEncoder
+  encoder: TextEncoder,
+  userCountry: string
 ) {
   try {
     const formData = await request.formData();
@@ -571,8 +670,8 @@ Scope: ${scope}`;
      service.sendProgress('reading', 25, 'Preparing documents for AI analysis...');
      await new Promise<void>(resolve => setTimeout(resolve, 3000));
 
-    // Phase 4: AI Processing & File Capture
-    await service.connectAndProcess(prompt);
+    // Phase 4: AI Processing & File Capture - Pass the detected country
+    await service.connectAndProcess(prompt, userCountry);
 
     // Phase 5: Final Results
     const result = {

@@ -1,0 +1,135 @@
+Category,Item/Action,Specification/Description,Manufacturer,Model #,Quantity,Unit,Source Page(s),Source Location(s)
+Demolition,Remove Kitchen Cabinetry,Remove kitchen cabinetry soffit sink counter and wall & floor finishes,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D1
+Demolition,Remove Spiral Stair,Remove spiral stair and portion of landing platform; protect/salvage existing carpet at landing,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D2
+Demolition,Remove Bathroom Vanity,Remove bathroom vanity wall & floor finishes; save accessories - towel rod and T.T. dispenser,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D3
+Demolition,Remove Window,Remove window and upper portion of wall only,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D4
+Demolition,Remove Storage Shelving,Carefully remove storage shelving along shared wall; save for re-use,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D5
+Demolition,Remove Light Fixture,Remove light fixture,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D6
+Demolition,Remove/Relocate Vent Louver,Remove/relocate existing vent louver,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D7
+Demolition,Remove Plumbing Fixtures,Remove existing plumbing fixtures,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D20
+Demolition,Remove Kitchen Appliances,Disconnect and remove existing kitchen appliances; save and protect gas oven and refrigerator for re-use,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D21
+Demolition,Remove Washer and Dryer,Disconnect and remove existing washer and dryer; save and protect washer and dryer for re-installation,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D22
+Demolition,Remove Ceiling Fan,Remove save and protect existing ceiling fan for re-installation,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D23
+Demolition,Remove Exhaust Fan,Remove existing non-functioning exhaust fan,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D24
+Demolition,Remove Lighting Fixture,Remove and save existing lighting fixture,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-100.00,Demolition Key Note D25
+Demolition,Disconnect Kitchen Sink,Disconnect existing dishwasher and kitchen sink temporarily cap as required,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,P-100.00,Plumbing Key Note D1
+Demolition,Disconnect Washer/Dryer,Disconnect washer and dryer temporarily cap as required,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,P-100.00,Plumbing Key Note D2
+Demolition,Remove Bathroom Fixtures,Remove all existing bathroom fixtures and piping to riser,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,P-100.00,Plumbing Key Note D3
+Demolition,Remove Exhaust Fan,Remove existing exhaust fan,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,P-100.00,Plumbing Key Note D4
+Finishes,Wood Flooring,Existing wood floors to be sanded stained and (3) coats water based sealer to be applied - Oak finish,Minwax or Approved Equal,NOT SPECIFIED,NOT SPECIFIED,SF,A-110.00,Finishes Materials List FL-1
+Finishes,Kitchen Tile,Kitchen tile - White/Matte,Tiles by Victoria,Galaxy 24X24 Rectified Porcelain,NOT SPECIFIED,SF,A-110.00,Finishes Materials List FL-2
+Finishes,Bath Tile,Bath tile - Snowblind/UPS,Nemo,Retroactive 2.0,NOT SPECIFIED,SF,A-110.00,Finishes Materials List FL-3
+Finishes,Existing Carpet,Existing carpet to remain - protect during construction,EXISTING,NOT SPECIFIED,NOT SPECIFIED,SF,A-110.00,Finishes Materials List FL-4
+Finishes,Wood Trim,Wood trim to match FL-1,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,LF,A-110.00,Finishes Materials List FL-5
+Finishes,Threshold,Threshold tile to wood flooring,Schluter,NOT SPECIFIED,NOT SPECIFIED,LF,A-110.00,Finishes Materials List TH-1
+Finishes,Wood Trim/Sill,Existing wood trim/sill to be refinished finish and stain to match FL-1,EXISTING,NOT SPECIFIED,NOT SPECIFIED,LF,A-110.00,Finishes Materials List TR-1
+Finishes,Bath/Shower Wall Tile,Bath/shower wall tile - Pearle/Stuta Rio,Nemo,Bryce,NOT SPECIFIED,SF,A-110.00,Finishes Materials List W-1
+Finishes,Kitchen Backsplash,Kitchen backsplash - White with veining/polished,Silestone,NOT SPECIFIED,NOT SPECIFIED,SF,A-110.00,Finishes Materials List W-2
+Finishes,Paint - Ceiling,Paint ceiling - Super White/Matte,Benjamin Moore,NOT SPECIFIED,NOT SPECIFIED,SF,A-110.00,Finishes Materials List PT-1
+Finishes,Paint - Trim,Paint trim - White/Satin,Benjamin Moore,NOT SPECIFIED,NOT SPECIFIED,LF,A-110.00,Finishes Materials List PT-2
+Finishes,Paint - Bath Wall,Paint bath wall - White/Matte,Benjamin Moore,NOT SPECIFIED,NOT SPECIFIED,SF,A-110.00,Finishes Materials List PT-3
+Finishes,Paint - Living/Kitchen/Corridor,Paint living kitchen corridor walls - White/Eggshell,Benjamin Moore,NOT SPECIFIED,NOT SPECIFIED,SF,A-110.00,Finishes Materials List PT-4
+Finishes,Paint - Kitchen Garage,Paint kitchen garage - Green/Matte,Benjamin Moore,#678 Pacific Rim,NOT SPECIFIED,SF,A-110.00,Finishes Materials List PT-5
+Finishes,Kitchen Counter Stone,Kitchen counter stone - White with veining/polished,Silestone,NOT SPECIFIED,NOT SPECIFIED,SF,A-110.00,Finishes Materials List ST-1
+Finishes,Bath Shelf/Niche,Bath shelf/niche - White,TBD,Thassos or Approved Equal,NOT SPECIFIED,SF,A-110.00,Finishes Materials List ST-2
+Finishes,Wall Base,Wall base - Painted wood to match existing,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,LF,A-110.00,Finishes Materials List B-1
+Finishes,Bath Wall Base,Bath wall base bullnose - Snowblind/UPS,Nemo,Retroactive 2.0,NOT SPECIFIED,LF,A-110.00,Finishes Materials List B-2
+Grout,Kitchen Tile Grout,Grout for kitchen tile,Laticrete or Approved Equal,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-110.00,Finishes Materials List FL-2
+Grout,Bath Tile Grout,Grout for bath tile,Laticrete or Approved Equal,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-110.00,Finishes Materials List FL-3
+Grout,Bath Wall Tile Grout,Grout for bath/shower wall tile,Laticrete or Approved Equal,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-110.00,Finishes Materials List W-1
+Grout,Bath Base Grout,Grout for bath wall base,Laticrete or Approved Equal,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-110.00,Finishes Materials List B-2
+Millwork,Kitchen Cabinetry - Upper,Kitchen cabinetry - White/Matte Finish,Bottega,Full Overlay White Lacquer,NOT SPECIFIED,LF,A-600.00,Millwork Schedule M1
+Millwork,Kitchen Cabinetry - Lower,Kitchen cabinetry - Wood Veneer,Bottega,Full Overlay Oak Wood Veneer,NOT SPECIFIED,LF,A-600.00,Millwork Schedule M2
+Millwork,Closet Doors,Closet doors - Wood Veneer,Bottega,Full Overlay Oak Wood Veneer,NOT SPECIFIED,EA,A-600.00,Millwork Schedule M3
+Appliances,Refrigerator,Refrigerator - Existing,Fisher Paykel,NOT SPECIFIED,1,EA,A-600.00,Appliances Schedule REF
+Appliances,Oven,Oven - Existing,EXISTING,NOT SPECIFIED,1,EA,A-600.00,Appliances Schedule OV
+Appliances,Washer,Washer - Existing,EXISTING,NOT SPECIFIED,1,EA,A-600.00,Appliances Schedule W
+Appliances,Dryer,Dryer - Existing,EXISTING,NOT SPECIFIED,1,EA,A-600.00,Appliances Schedule D
+Appliances,Dishwasher,Dishwasher - Panel Ready,Miele,G5482SCVI,1,EA,A-600.00,Appliances Schedule DW
+Appliances,Exhaust Fan,Exhaust fan,Panasonic,FV0511VKS3S,1,EA,A-600.00,Appliances Schedule EXH
+Plumbing,Kitchen Sink,30" Rowena Farmhouse Single Basin - White,Signature Hardware,SHF3018,1,EA,A-600.00,Plumbing Schedule PL-1
+Plumbing,Kitchen Faucet,Holborn faucet - Chrome,Perrin & Rowe,U.4045L-APC-2,1,EA,A-600.00,Plumbing Schedule PL-1
+Plumbing,Soap Dispenser,Soap dispenser,Perrin & Rowe,NOT SPECIFIED,1,EA,A-600.00,Plumbing Schedule PL-1
+Plumbing,Glass Washer/Rinser,Metal Glass Rinser - Chrome,Delta or Approved Equal,GR-250,1,EA,A-600.00,Plumbing Schedule PL-1
+Plumbing,Lavatory & Vanity,Lavatory & Vanity - White/Glass,Bottega,NOT SPECIFIED,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Lavatory Faucet,Faucet single hole and sink drain - Chrome,Fantini,F3402F004WU and F910,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Toilet,Legato toilet - White,Toto,MS624124CEFG,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Shower Thermostatic Mixer Rough,Shower thermostatic mixer rough - Chrome,Fantini,19 00 D400AU,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Shower Thermostatic Mixer Trim,Shower thermostatic mixer trim,Fantini / Icona Deco,87 02 R700BU,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Shower 2-Way Diverter Rough,Shower 2-way diverter with volume control rough - Chrome,Fantini,1900D391AU,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Shower 2-Way Diverter Trim,Shower 2-way diverter with volume control trim,Fantini / Icona Classic,53 02 R591BU,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Shower Arm,Shower arm - Chrome,Fantini,86 02 9236U,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Shower Head,Shower head - Chrome,Fantini,85 02 8135UC,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Handheld Shower Option 1,Handheld shower option 1,Fantini / Icona Classic,53 02 R043U,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Handheld Shower Option 2,Handheld shower option 2,Fantini / Venezia,90 02 9849U,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Shower Hose,Shower hose,NOT SPECIFIED,90 02 9349,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Wall Mount,Wall mount,NOT SPECIFIED,91 02 9323U,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Handheld Shower Option 3,Handheld shower option 3,Fantini / Soho,90 02 9418U,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Shower Hose Alt,Shower hose alternate,NOT SPECIFIED,90 93 9349,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Wall Mount Alt,Wall mount alternate,NOT SPECIFIED,91 02 9323U,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Shower Pan,Shower pan alcove,MTI,NOT SPECIFIED,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Shower Drain,Shower drain,ID Infinity Drain,LDQ 5-2I,1,EA,A-600.00,Plumbing Schedule PL-2
+Plumbing,Medicine Cabinet,Medicine cabinet,Bottega,NOT SPECIFIED,1,EA,A-600.00,Plumbing Schedule Accessories
+Plumbing,Towel Rod,Towel rod - Re-use existing,EXISTING,NOT SPECIFIED,2,EA,A-600.00,Plumbing Schedule Accessories
+Plumbing,Toilet Paper Dispenser,Toilet paper dispenser - Re-use existing,EXISTING,NOT SPECIFIED,1,EA,A-600.00,Plumbing Schedule Accessories
+Plumbing,Robe Hook,Robe hook,TBD,NOT SPECIFIED,2,EA,A-600.00,Plumbing Schedule Accessories
+Plumbing,Grab Bar,Grab bar - Chrome,Kartners,829124,1,EA,A-600.00,Plumbing Schedule Accessories
+Windows,Window,Window,TBD,NOT SPECIFIED,1,EA,A-600.00,Window Schedule W1
+Framing,Metal Studs 3-5/8",Metal studs 3-5/8" 25 GA at max 24" O.C.,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,LF,A-101.00 A-500.00,Wall Type 1 Construction Details
+Framing,Metal Studs 2-1/2",Metal studs 2-1/2" min 25 GA at max 24" O.C.,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,LF,A-101.00 A-500.00,Wall Type 2 Construction Details
+Framing,Metal Studs 22 GA,Metal studs 3-5/8" 22 GA at 16" O.C. max,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,LF,A-500.00,Tile Installation Details
+Framing,Wood Blocking,Wood blocking for grab bar installation,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,LF,A-101.00,Construction Key Note 4
+Insulation,Roxul AFB Insulation,Roxul AFB insulation for wall assemblies,Roxul,AFB,NOT SPECIFIED,SF,A-101.00 A-500.00,Wall Type Details
+Insulation,Plumbing Line Insulation,Wrap insulation around all plumbing lines below counter,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,LF,A-200.00,Kitchen Elevation Details
+Drywall,Gypsum Board 5/8",Gypsum board 5/8" thick applied vertically or horizontally,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,SF,A-101.00 A-500.00,Wall Type Details
+Drywall,Cement Board 5/8",Cement board 5/8" continuous reinforced,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,SF,A-500.00,Tile Installation Details
+Drywall,Moisture Resistant Wallboard,Mold and moisture resistant wallboard at all other wet locations,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,SF,A-101.00,Wall Type Notes
+Waterproofing,Laticrete 9235 Membrane,Laticrete 9235 waterproofing membrane,Laticrete,9235,NOT SPECIFIED,SF,A-500.00,Waterproofing Details
+Waterproofing,Laticrete Hydroban,Laticrete Hydroban waterproofing or approved equal,Laticrete,Hydroban,NOT SPECIFIED,SF,A-500.00,Tile Installation Details
+Sealants,Acoustical Sealant,Acoustical sealant and firestopping as required at top and bottom,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,LF,A-101.00 A-500.00,Wall Type Details
+Sealants,Silicone Sealant,Silicone sealant,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,LF,A-500.00,Threshold Details
+Adhesives,Laticrete Grout,Laticrete grout,Laticrete,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-500.00,Tile Installation Details
+Adhesives,Laticrete 254 Platinum,Laticrete 254 Platinum,Laticrete,254 Platinum,NOT SPECIFIED,NOT SPECIFIED,A-500.00,Tile Installation Details
+Adhesives,Laticrete 226 Thick Bed Mortar,Laticrete 226 thick bed mortar mixed with Laticrete 3701 mortar admix,Laticrete,226 and 3701,NOT SPECIFIED,NOT SPECIFIED,A-500.00,Tile Installation Details
+Adhesives,Laticrete Latasil,Laticrete Latasil,Laticrete,Latasil,NOT SPECIFIED,NOT SPECIFIED,A-500.00,Tile Installation Details
+Adhesives,Thinset,Thinset adhesive,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-500.00,Tile Installation Details
+Substrates,Plywood Subfloor,Plywood subfloor,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,SF,A-500.00,Flooring Details
+Substrates,Existing Concrete Slab,Existing concrete slab,EXISTING,NOT SPECIFIED,NOT SPECIFIED,SF,A-500.00,Flooring Details
+Substrates,Mortar Setting Bed,Mortar setting bed with welded wire mesh,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,SF,A-500.00,Shower Pan Details
+Hardware,Vinyl Bead,Vinyl bead,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,LF,A-500.00,Threshold Details
+Hardware,Reveal Bead,Reveal bead 1/4",NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,LF,A-500.00,Staircase Details
+Hardware,Welded Wire Mesh,Welded wire mesh,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,SF,A-500.00,Mortar Bed Details
+Hardware,Reinforcing Fabric,Reinforcing fabric as required,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,SF,A-500.00,Waterproofing Details
+Hardware,Joist Block Hanger,Joist block hanger 1/2",NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,EA,A-500.00,Staircase Details
+Hardware,Glass Bypass Shower Doors,Glass bypass shower doors,NOT SPECIFIED,NOT SPECIFIED,1,EA,A-200.00,Bath Elevation Details
+Hardware,Drying Racks,Drying racks for dish/glassware,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,EA,A-200.00,Kitchen Elevation Details
+Hardware,Pull-Out Accessories,Various pull-out cabinet accessories,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,EA,A-200.00,Kitchen Elevation Details
+Labor,Install New Kitchen Cabinetry,Install new kitchen cabinetry,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 1
+Labor,Install New Appliances,Install new appliances see appliance schedule,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 2
+Labor,Install New Bath Finishes,Install new bath finishes see finish schedule,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 3
+Labor,Install New Interior Window,Install new interior window,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 5
+Labor,Frame New Platform Landing,Frame new platform landing and provide new stair and metal baluster/wood handrail,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 6
+Labor,Install New Tile Floor,Install new tile floor,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 7
+Labor,Refinish Window Sill,Refinish window sill to match new floor finish,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 8
+Labor,Refinish Steps,Steps to be refinished to match new floor finish/stain at wood floors,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 9
+Labor,Frame/Finish New Opening,Frame/finish new opening and install new millwork doors and trim,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 10
+Labor,Frame/Finish New Ledge,Frame/finish new ledge at shower - coordinate finish height with height of kitchen cabinets,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 11
+Labor,Frame New Opening for Cabinet,Frame new opening for garage cabinet,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 12
+Labor,Re-install Storage Shelving,Re-install existing storage shelving,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 13
+Labor,Install Shower Foot Rest,Install shower shaving foot rest ST-2 refer to elevation drawings,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 14
+Labor,Install New Plumbing Fixtures,Install new plumbing fixtures - see plumbing schedule,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 30
+Labor,Re-install Washer & Dryer,Re-install existing washer & dryer,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 31
+Labor,Install GFCI Plug Mold,Provide continuous GFCI plug mold at underside of cabinetry,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 32
+Labor,Maintain Sprinkler Head,Maintain sprinkler head at face of new soffit,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 33
+Labor,Install New Exhaust Fan,Install new exhaust fan -75 CFM at .025" static pressure,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 35
+Labor,Extend Louver and Ductwork,Louver and ductwork to extend to new wall location,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction Key Note 36
+Labor,Skim Sand and Paint,Skim sand and paint all walls & ceilings throughout - see finish schedule,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction General Notes
+Labor,Refinish Wood Floors,All wood floors to be refinished stained and sealed; samples required for approval,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction General Notes
+Labor,Install New Partitions,Install new partitions as noted,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-101.00,Construction General Notes
+Labor,Install New Lighting,Install new lighting as indicated see lighting schedule,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-110.00,RCP General Notes
+Labor,Paint All Ceilings,Paint all ceiling throughout U.O.N.,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-110.00,RCP General Notes
+Labor,Install Dropped Ceiling,Install new dropped ceiling if required to allow new light fixture housing - V.I.F. required,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-110.00,RCP Note 1
+Labor,Provide Wiring Route,Provide route for wiring for remote transformer - patch/repair and refinish areas disturbed,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-110.00,RCP Note 2
+Labor,Preserve Building Interim,Preserve existing building interim at cabinet base,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-110.00,RCP Note 3
+Labor,Relocate Telephone Outlet,Relocate existing telephone outlet,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,NOT SPECIFIED,A-110.00,RCP Note 4
+
