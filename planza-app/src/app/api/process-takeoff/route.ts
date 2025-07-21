@@ -31,8 +31,8 @@ class ManusAutomationService {
       'content-type': 'application/json',
       'x-client-id': CONFIG.CLIENT_ID,
       'x-client-locale': 'en',
-      'x-client-timezone': 'Asia/Calcutta',
-      'x-client-timezone-offset': '-330',
+      'x-client-timezone': 'America/New_York',
+      'x-client-timezone-offset': '-300',
       'x-client-type': 'web',
       'connect-protocol-version': '1',
       'accept': '*/*',
@@ -95,8 +95,8 @@ class ManusAutomationService {
             client_type: "web",
             client_locale: "en",
             product_name: "Manus",
-            timezone: "Asia/Calcutta",
-            timezone_offset: -330,
+            timezone: "America/New_York",
+            timezone_offset: -300,
             tm_token: "25b2139e15b22108ab581e9112551948"
           }
         },
@@ -182,7 +182,7 @@ class ManusAutomationService {
       query: {
         token: CONFIG.JWT_TOKEN,
         locale: 'en',
-        tz: 'Asia/Calcutta',
+        tz: 'America/New_York',
         clientType: 'web'
       },
       transports: ['websocket'],
