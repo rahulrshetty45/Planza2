@@ -1,0 +1,750 @@
+#!/usr/bin/env python3
+"""
+Construction Takeoff Data Organization
+130 Barrow Street, Apt 215 - Interior Renovation
+"""
+
+import pandas as pd
+import numpy as np
+
+# Define the construction takeoff data structure
+takeoff_data = []
+
+# DEMOLITION ITEMS
+demolition_items = [
+    {
+        'Category': 'Demolition',
+        'Item': 'Kitchen Demolition',
+        'Description': 'Remove kitchen cabinetry, soffit, sink, counter, wall & floor finishes',
+        'Location': 'Kitchen',
+        'Specification': 'Complete removal to prepare for new installation',
+        'Quantity': 1,
+        'Unit': 'LS',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Demolition',
+        'Item': 'Spiral Stair Removal',
+        'Description': 'Remove spiral stair and portion of landing platform; protect/salvage existing carpet',
+        'Location': 'Living/Dining',
+        'Specification': 'Careful removal, protect existing carpet at landing',
+        'Quantity': 1,
+        'Unit': 'LS',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Demolition',
+        'Item': 'Bathroom Demolition',
+        'Description': 'Remove bathroom vanity, wall & floor finishes; save accessories',
+        'Location': 'Bathroom',
+        'Specification': 'Save towel rod and T.P. dispenser for re-use',
+        'Quantity': 1,
+        'Unit': 'LS',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Demolition',
+        'Item': 'Window Removal',
+        'Description': 'Remove window and upper portion of wall only',
+        'Location': 'Kitchen',
+        'Specification': 'Partial wall removal for new opening',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Demolition',
+        'Item': 'Storage Shelving',
+        'Description': 'Carefully remove storage shelving along shared wall',
+        'Location': 'Storage',
+        'Specification': 'Save for re-use',
+        'Quantity': 1,
+        'Unit': 'LS',
+        'Cost': 'TBD'
+    }
+]
+
+# WALL CONSTRUCTION
+wall_construction = [
+    {
+        'Category': 'Framing',
+        'Item': 'Metal Stud Wall - Type 1',
+        'Description': 'UL U419: 5/8" gypsum board on 3-5/8" metal stud wall each side',
+        'Location': 'Various',
+        'Specification': '1-HR fire rated, 25 GA steel studs @ 24" O.C. max',
+        'Quantity': 50,
+        'Unit': 'LF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Framing',
+        'Item': 'Metal Stud Wall - Type 2',
+        'Description': '5/8" gypsum board on 2-1/2" metal stud furred wall',
+        'Location': 'Various',
+        'Specification': '25 GA steel studs @ 24" O.C. max',
+        'Quantity': 30,
+        'Unit': 'LF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Framing',
+        'Item': 'Gypsum Board Furring',
+        'Description': 'Existing wall with gypsum board furring',
+        'Location': 'Various',
+        'Specification': 'Furring channels with 5/8" gypsum board',
+        'Quantity': 20,
+        'Unit': 'LF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Insulation',
+        'Item': 'ROXUL AFB Insulation',
+        'Description': 'Acoustic/thermal insulation for wall cavities',
+        'Location': 'All new walls',
+        'Specification': 'ROXUL AFB, thickness per wall type',
+        'Quantity': 100,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    }
+]
+
+# FLOORING MATERIALS
+flooring_materials = [
+    {
+        'Category': 'Flooring',
+        'Item': 'Wood Floor Refinishing',
+        'Description': 'Sand, stain and seal existing oak floors',
+        'Location': 'Living/Dining, Bedroom',
+        'Specification': 'Minwax stain, 3 coats water-based sealer',
+        'Quantity': 400,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Flooring',
+        'Item': 'Kitchen Porcelain Tile',
+        'Description': 'White/matte rectified porcelain tile',
+        'Location': 'Kitchen',
+        'Specification': 'Tiles by Victoria Galaxy 24x24, Laticrete grout 1/8" joints',
+        'Quantity': 120,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Flooring',
+        'Item': 'Bathroom Tile',
+        'Description': 'Snowblind/UPS porcelain tile',
+        'Location': 'Bathroom',
+        'Specification': 'Nemo Retroactive 2.0 12x12, Laticrete grout 1/8" joints',
+        'Quantity': 50,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Flooring',
+        'Item': 'Tile Installation Materials',
+        'Description': 'Thin set, waterproof membrane, reinforcing',
+        'Location': 'Kitchen, Bathroom',
+        'Specification': 'Laticrete 9235 waterproof membrane, mortar bed w/ welded wire mesh',
+        'Quantity': 170,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    }
+]
+
+# WALL FINISHES
+wall_finishes = [
+    {
+        'Category': 'Wall Finishes',
+        'Item': 'Bathroom Wall Tile',
+        'Description': 'Pearle/Stuta wall tile',
+        'Location': 'Bathroom walls',
+        'Specification': 'Nemo Bryce 12x24, Laticrete grout 1/8" joints',
+        'Quantity': 200,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Wall Finishes',
+        'Item': 'Kitchen Backsplash',
+        'Description': 'White with veining stone backsplash',
+        'Location': 'Kitchen',
+        'Specification': 'Silestone 1-1/4" thick, polished, squared edges',
+        'Quantity': 40,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Wall Finishes',
+        'Item': 'Paint - Ceiling',
+        'Description': 'Super White ceiling paint',
+        'Location': 'All rooms',
+        'Specification': 'Benjamin Moore, matte finish',
+        'Quantity': 600,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Wall Finishes',
+        'Item': 'Paint - Trim',
+        'Description': 'White trim paint',
+        'Location': 'All rooms',
+        'Specification': 'Benjamin Moore, satin finish',
+        'Quantity': 200,
+        'Unit': 'LF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Wall Finishes',
+        'Item': 'Paint - Walls',
+        'Description': 'White wall paint',
+        'Location': 'Living, Kitchen, Corridor, Bathroom',
+        'Specification': 'Benjamin Moore, eggshell/matte finish',
+        'Quantity': 800,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Wall Finishes',
+        'Item': 'Paint - Kitchen Garage',
+        'Description': 'Green accent paint',
+        'Location': 'Kitchen garage area',
+        'Specification': 'Benjamin Moore #678 Pacific Rim, matte finish',
+        'Quantity': 20,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    }
+]
+
+# COUNTERTOPS AND STONE
+countertops = [
+    {
+        'Category': 'Countertops',
+        'Item': 'Kitchen Counter',
+        'Description': 'White with veining stone counter',
+        'Location': 'Kitchen',
+        'Specification': 'Silestone 1-1/4" thick, polished, squared edges',
+        'Quantity': 25,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Countertops',
+        'Item': 'Bathroom Shelf/Niche',
+        'Description': 'White stone shelf',
+        'Location': 'Bathroom shower',
+        'Specification': 'Thassos or approved equal',
+        'Quantity': 2,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    }
+]
+
+# MILLWORK AND CABINETRY
+millwork = [
+    {
+        'Category': 'Millwork',
+        'Item': 'Kitchen Upper Cabinets',
+        'Description': 'White lacquer finish upper cabinets',
+        'Location': 'Kitchen',
+        'Specification': 'Bottega full overlay white lacquer finish',
+        'Quantity': 12,
+        'Unit': 'LF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Millwork',
+        'Item': 'Kitchen Lower Cabinets',
+        'Description': 'Wood veneer and white lacquer lower cabinets',
+        'Location': 'Kitchen',
+        'Specification': 'Bottega full overlay, oak wood veneer and white lacquer',
+        'Quantity': 15,
+        'Unit': 'LF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Millwork',
+        'Item': 'Closet Doors',
+        'Description': 'Wood veneer closet doors',
+        'Location': 'Laundry closet',
+        'Specification': 'Bottega full overlay oak wood veneer',
+        'Quantity': 2,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Millwork',
+        'Item': 'Wood Base Trim',
+        'Description': 'Painted wood base trim',
+        'Location': 'All rooms except bathroom',
+        'Specification': 'Painted to match existing',
+        'Quantity': 150,
+        'Unit': 'LF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Millwork',
+        'Item': 'Bathroom Base Trim',
+        'Description': 'Tile base trim',
+        'Location': 'Bathroom',
+        'Specification': 'Nemo Retroactive 2.0 6x18 bullnose',
+        'Quantity': 25,
+        'Unit': 'LF',
+        'Cost': 'TBD'
+    }
+]
+
+# APPLIANCES AND EQUIPMENT
+appliances = [
+    {
+        'Category': 'Appliances',
+        'Item': 'Dishwasher',
+        'Description': 'Panel ready dishwasher',
+        'Location': 'Kitchen',
+        'Specification': 'Miele G4472SCVI, 18x24x34',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Appliances',
+        'Item': 'Exhaust Fan',
+        'Description': 'Bathroom exhaust fan',
+        'Location': 'Bathroom',
+        'Specification': 'Panasonic FV0511VKS3S, 75 CFM at 0.025" static pressure',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    }
+]
+
+# PLUMBING FIXTURES - KITCHEN
+plumbing_kitchen = [
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Kitchen Sink',
+        'Description': '30" farmhouse single basin sink',
+        'Location': 'Kitchen',
+        'Specification': 'Signature Hardware Rowena #SHF3017, white',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Kitchen Faucet',
+        'Description': 'Single handle kitchen faucet',
+        'Location': 'Kitchen',
+        'Specification': 'Perrin & Rowe U.4045L-APC-2 Holborn, chrome',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Soap Dispenser',
+        'Description': 'Kitchen soap dispenser',
+        'Location': 'Kitchen',
+        'Specification': 'Perrin & Rowe',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Glass Rinser',
+        'Description': 'Metal glass rinser',
+        'Location': 'Kitchen',
+        'Specification': 'Delta GR-250, chrome',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    }
+]
+
+# PLUMBING FIXTURES - BATHROOM
+plumbing_bathroom = [
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Lavatory and Vanity',
+        'Description': 'Bathroom lavatory with vanity',
+        'Location': 'Bathroom',
+        'Specification': 'Bottega, white/glass',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Lavatory Faucet',
+        'Description': 'Single hole lavatory faucet',
+        'Location': 'Bathroom',
+        'Specification': 'Fantini F3402F004WU, chrome',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Sink Drain',
+        'Description': 'Universal pop up drain',
+        'Location': 'Bathroom',
+        'Specification': 'Fantini F910 1-1/4"',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Toilet',
+        'Description': 'One-piece toilet',
+        'Location': 'Bathroom',
+        'Specification': 'Toto Legato, white',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Shower Thermostatic Mixer',
+        'Description': 'Thermostatic shower mixer rough and trim',
+        'Location': 'Bathroom shower',
+        'Specification': 'Fantini 1900D400AU rough, Icona Deco 8702R700BU trim',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Shower Diverter',
+        'Description': '2-way diverter with volume control',
+        'Location': 'Bathroom shower',
+        'Specification': 'Fantini 1900D391AU rough, Icona Classic 5302R591BU trim',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Shower Head',
+        'Description': 'Fixed shower head',
+        'Location': 'Bathroom shower',
+        'Specification': 'Fantini 7502 7135UC, 1.8GPM, chrome',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Hand Held Shower',
+        'Description': 'Hand held shower with hose and mount',
+        'Location': 'Bathroom shower',
+        'Specification': 'Fantini (multiple options available)',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Shower Pan',
+        'Description': 'Acrylic shower pan',
+        'Location': 'Bathroom shower',
+        'Specification': 'MTI Alcove 30"x50"',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Plumbing Fixtures',
+        'Item': 'Shower Drain',
+        'Description': 'Linear shower drain',
+        'Location': 'Bathroom shower',
+        'Specification': 'ID Infinity Drain LDQ 5-2I, 5"x5"',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    }
+]
+
+# BATHROOM ACCESSORIES
+bathroom_accessories = [
+    {
+        'Category': 'Accessories',
+        'Item': 'Medicine Cabinet',
+        'Description': 'Recessed medicine cabinet',
+        'Location': 'Bathroom',
+        'Specification': 'Bottega, 30"x4"x29"',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Accessories',
+        'Item': 'Towel Rod',
+        'Description': 'Existing towel rods to be reused',
+        'Location': 'Bathroom',
+        'Specification': 'Re-use existing',
+        'Quantity': 2,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Accessories',
+        'Item': 'Toilet Paper Dispenser',
+        'Description': 'Existing T.P. dispenser to be reused',
+        'Location': 'Bathroom',
+        'Specification': 'Re-use existing',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Accessories',
+        'Item': 'Robe Hook',
+        'Description': 'New robe hooks',
+        'Location': 'Bathroom',
+        'Specification': 'TBD',
+        'Quantity': 2,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Accessories',
+        'Item': 'Grab Bar',
+        'Description': 'ADA compliant grab bar',
+        'Location': 'Bathroom',
+        'Specification': 'Kartners 72791124, 24", chrome',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    }
+]
+
+# LIGHTING FIXTURES
+lighting = [
+    {
+        'Category': 'Lighting',
+        'Item': 'Recessed Downlights',
+        'Description': 'LED recessed downlight fixtures',
+        'Location': 'Various rooms',
+        'Specification': 'L-1 and L-5 types, wet proof where required',
+        'Quantity': 8,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Lighting',
+        'Item': 'Wall Sconces',
+        'Description': 'Wall mounted sconce fixtures',
+        'Location': 'Bathroom, other areas',
+        'Specification': 'L-2 type',
+        'Quantity': 3,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Lighting',
+        'Item': 'Track Lighting',
+        'Description': 'Track lighting system with various heads',
+        'Location': 'Kitchen, living areas',
+        'Specification': 'L-3A, L-3B, L-3C types (round, linear, under cabinet)',
+        'Quantity': 15,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Lighting',
+        'Item': 'Linear Fixtures',
+        'Description': 'Linear LED fixtures',
+        'Location': 'Various areas',
+        'Specification': 'L-4, L-7, L-8 types',
+        'Quantity': 5,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Lighting',
+        'Item': 'Under Cabinet Lighting',
+        'Description': 'Under cabinet LED strip lighting',
+        'Location': 'Kitchen',
+        'Specification': 'L-6 type with cove lighting',
+        'Quantity': 12,
+        'Unit': 'LF',
+        'Cost': 'TBD'
+    }
+]
+
+# ELECTRICAL WORK
+electrical = [
+    {
+        'Category': 'Electrical',
+        'Item': 'GFCI Outlets',
+        'Description': 'Ground fault circuit interrupter outlets',
+        'Location': 'Kitchen, bathroom, wet areas',
+        'Specification': 'Code compliant GFCI outlets',
+        'Quantity': 8,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Electrical',
+        'Item': 'Standard Outlets',
+        'Description': 'Duplex electrical outlets',
+        'Location': 'Various rooms',
+        'Specification': 'Standard duplex outlets, tamper resistant',
+        'Quantity': 12,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Electrical',
+        'Item': 'Switches',
+        'Description': 'Light switches and dimmers',
+        'Location': 'Various rooms',
+        'Specification': 'Standard and dimmer switches',
+        'Quantity': 10,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Electrical',
+        'Item': 'GFCI Plug Mold',
+        'Description': 'Continuous GFCI plug mold',
+        'Location': 'Kitchen under cabinets',
+        'Specification': 'Continuous GFCI plug mold at underside of cabinetry',
+        'Quantity': 12,
+        'Unit': 'LF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Electrical',
+        'Item': 'Circuit Breakers',
+        'Description': 'Dedicated circuit breakers for appliances',
+        'Location': 'Electrical panel',
+        'Specification': 'Separate circuits for kitchen appliances',
+        'Quantity': 3,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    }
+]
+
+# MECHANICAL WORK
+mechanical = [
+    {
+        'Category': 'Mechanical',
+        'Item': 'Exhaust Fan Installation',
+        'Description': 'Install new bathroom exhaust fan',
+        'Location': 'Bathroom',
+        'Specification': 'Panasonic FV0511VKS3S, 75 CFM at 0.025" static pressure',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Mechanical',
+        'Item': 'Ductwork',
+        'Description': 'Extend ductwork to new wall location',
+        'Location': 'Bathroom to exterior',
+        'Specification': 'Louver and ductwork extension',
+        'Quantity': 10,
+        'Unit': 'LF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Mechanical',
+        'Item': 'Sprinkler Maintenance',
+        'Description': 'Maintain sprinkler head at new soffit',
+        'Location': 'Kitchen',
+        'Specification': 'Relocate/maintain existing sprinkler head',
+        'Quantity': 1,
+        'Unit': 'EA',
+        'Cost': 'TBD'
+    }
+]
+
+# WATERPROOFING
+waterproofing = [
+    {
+        'Category': 'Waterproofing',
+        'Item': 'Waterproof Membrane',
+        'Description': 'Waterproof membrane system',
+        'Location': 'Kitchen and bathroom floors/walls',
+        'Specification': 'Laticrete 9235 waterproof membrane, turn up 6" at walls',
+        'Quantity': 220,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Waterproofing',
+        'Item': 'Cement Board',
+        'Description': 'Moisture resistant cement board backing',
+        'Location': 'All tiled areas',
+        'Specification': '5/8" cement board, continuous reinforced',
+        'Quantity': 250,
+        'Unit': 'SF',
+        'Cost': 'TBD'
+    }
+]
+
+# MISCELLANEOUS
+miscellaneous = [
+    {
+        'Category': 'Miscellaneous',
+        'Item': 'Permits and Inspections',
+        'Description': 'Required building permits and inspections',
+        'Location': 'Project wide',
+        'Specification': 'NYC DOB permits, plumbing, electrical inspections',
+        'Quantity': 1,
+        'Unit': 'LS',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Miscellaneous',
+        'Item': 'Temporary Protection',
+        'Description': 'Protect existing finishes during construction',
+        'Location': 'Project wide',
+        'Specification': 'Floor protection, dust barriers, temporary partitions',
+        'Quantity': 1,
+        'Unit': 'LS',
+        'Cost': 'TBD'
+    },
+    {
+        'Category': 'Miscellaneous',
+        'Item': 'Cleanup',
+        'Description': 'Construction cleanup and debris removal',
+        'Location': 'Project wide',
+        'Specification': 'Daily cleanup, final cleaning, debris disposal',
+        'Quantity': 1,
+        'Unit': 'LS',
+        'Cost': 'TBD'
+    }
+]
+
+# Combine all data
+all_data = (demolition_items + wall_construction + flooring_materials + 
+           wall_finishes + countertops + millwork + appliances + 
+           plumbing_kitchen + plumbing_bathroom + bathroom_accessories + 
+           lighting + electrical + mechanical + waterproofing + miscellaneous)
+
+# Add to takeoff_data
+takeoff_data.extend(all_data)
+
+# Create DataFrame
+df = pd.DataFrame(takeoff_data)
+
+# Display summary
+print(f"Total items in takeoff: {len(df)}")
+print(f"Categories: {df['Category'].unique()}")
+print(f"\\nSample data:")
+print(df.head())
+
+if __name__ == "__main__":
+    # Save to CSV
+    df.to_csv('/home/ubuntu/construction_takeoff.csv', index=False)
+    print(f"\\nData saved to construction_takeoff.csv")
+    
+    # Display category summary
+    category_summary = df.groupby('Category').size().reset_index(name='Count')
+    print(f"\\nCategory Summary:")
+    print(category_summary)
+

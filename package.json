@@ -1,0 +1,71 @@
+{
+  "name": "manus-construction-analyzer",
+  "version": "1.0.0",
+  "description": "Automated construction document analysis using Manus AI - Professional document processing for construction estimation",
+  "main": "manus_socketio_automation.js",
+  "scripts": {
+    "start": "node manus_socketio_automation.js",
+    "test-upload": "node test_file_upload_automation.js",
+    "test-message": "node test_message_send_with_file.js",
+    "test-api": "bash manus_api_test_commands.sh",
+    "analyze-basic": "node -e \"const {ConstructionDocumentAnalyzer} = require('./manus_socketio_automation.js'); new ConstructionDocumentAnalyzer().analyzeDocument(null, 'BASIC_ANALYSIS');\"",
+    "analyze-detailed": "node -e \"const {ConstructionDocumentAnalyzer} = require('./manus_socketio_automation.js'); new ConstructionDocumentAnalyzer().analyzeDocument(null, 'DETAILED_EXTRACTION');\"",
+    "analyze-premium": "node -e \"const {ConstructionDocumentAnalyzer} = require('./manus_socketio_automation.js'); new ConstructionDocumentAnalyzer().analyzeDocument(null, 'PREMIUM_ANALYSIS');\""
+  },
+  "keywords": [
+    "construction",
+    "document-analysis",
+    "ai-automation",
+    "manus-ai",
+    "pdf-extraction",
+    "cost-estimation",
+    "bill-of-quantities",
+    "construction-takeoff",
+    "building-materials"
+  ],
+  "author": "Construction Document Analyzer Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "form-data": "^4.0.4",
+    "https": "^1.0.0",
+    "socket.io-client": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-org/manus-construction-analyzer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/manus-construction-analyzer/issues"
+  },
+  "homepage": "https://github.com/your-org/manus-construction-analyzer#readme",
+  "files": [
+    "manus_socketio_automation.js",
+    "test_file_upload_automation.js",
+    "test_message_send_with_file.js",
+    "manus_api_test_commands.sh",
+    "manus_api_research_findings.md",
+    "README.md"
+  ],
+  "config": {
+    "pricing": {
+      "basic": 50,
+      "detailed": 100,
+      "premium": 200
+    },
+    "target_market": "construction_professionals"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/construction-analyzer"
+  },
+  "preferGlobal": false,
+  "private": false
+}

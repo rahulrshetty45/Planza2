@@ -1,0 +1,88 @@
+Category,Item,Description,Location,Specification,Quantity,Unit,Cost_Per_Unit,Subtotal,Total
+Demolition,Kitchen Cabinetry Removal,Remove existing kitchen cabinetry and soffit,Kitchen,Complete removal including disposal,1,LS,800,800,800
+Demolition,Spiral Stair Removal,Remove spiral stair and portion of landing platform,Living/Dining,Protect/salvage existing carpet at landing,1,LS,1200,1200,1200
+Demolition,Bathroom Vanity Removal,Remove bathroom vanity and finishes,Bathroom,Save accessories - towel rod and dispenser,1,LS,400,400,400
+Demolition,Window Removal,Remove window and upper portion of wall,Bedroom,Partial wall removal only,1,EA,600,600,600
+Demolition,Storage Shelving Removal,Carefully remove storage shelving,Shared Wall,Save for re-use,1,LS,200,200,200
+Demolition,Light Fixture Removal,Remove existing light fixtures,Various,Multiple locations,6,EA,50,300,300
+Demolition,Plumbing Fixture Removal,Remove existing plumbing fixtures,Kitchen/Bath,Temporary cap as required,1,LS,500,500,500
+Demolition,Appliance Disconnection,Disconnect kitchen appliances,Kitchen,Save gas oven and refrigerator,1,LS,300,300,300
+Demolition,Washer/Dryer Disconnection,Disconnect washer and dryer,Laundry Closet,Save and protect for re-installation,1,LS,200,200,200
+Demolition,Exhaust Fan Removal,Remove non-functioning exhaust fan,Bathroom,Complete removal,1,EA,150,150,150
+Framing,Metal Stud Walls,Install new 3-5/8" metal stud partitions,Various,25 GA studs @ 24" O.C. max,120,LF,15,1800,1800
+Framing,Metal Stud Walls,Install new 2-1/2" metal stud partitions,Various,25 GA studs @ 24" O.C. max,80,LF,12,960,960
+Framing,Wood Blocking,Provide wood blocking for grab bar installation,Bathroom,Behind tile areas,8,LF,8,64,64
+Framing,Platform Landing,Frame new platform landing,Living Area,Coordinate with stair installation,1,LS,800,800,800
+Framing,New Openings,Frame new openings for millwork,Various,Multiple locations,4,EA,150,600,600
+Drywall,Gypsum Board,Install 5/8" gypsum board on metal studs,New Walls,Both sides of partition,400,SF,2.5,1000,1000
+Drywall,Cement Board,Install cement board at tiled areas,Bathroom/Kitchen,Mold and moisture resistant,120,SF,4,480,480
+Drywall,Skim and Paint,Skim sand and paint all walls and ceilings,Throughout,See finish schedule,1200,SF,3,3600,3600
+Flooring,Wood Floor Refinishing,Sand stain and seal existing wood floors,Living/Dining/Bedroom,3 coats water-based sealer,600,SF,8,4800,4800
+Flooring,Kitchen Tile,Install 24x24 porcelain tile,Kitchen,Galaxy White/Matte Rectified,180,SF,12,2160,2160
+Flooring,Bathroom Tile,Install 12x12 tile,Bathroom,Snowblind/Nemo Retroactive 2.0,45,SF,15,675,675
+Flooring,Tile Underlayment,Install waterproof membrane,Kitchen/Bath,Laticrete 9235 system,225,SF,6,1350,1350
+Flooring,Threshold,Install tile to wood threshold,Bathroom Entry,Schluter system,2,LF,25,50,50
+Tile Work,Bathroom Wall Tile,Install 12x24 wall tile,Bathroom,Pearle/Stuta Nemo Bryce,160,SF,18,2880,2880
+Tile Work,Kitchen Backsplash,Install Silestone backsplash,Kitchen,White with veining polished,35,SF,45,1575,1575
+Tile Work,Tile Base,Install bullnose tile base,Bathroom,6x18 Snowblind,20,LF,12,240,240
+Millwork,Kitchen Upper Cabinets,Install white lacquer upper cabinets,Kitchen,Bottega full overlay,12,LF,350,4200,4200
+Millwork,Kitchen Lower Cabinets,Install oak veneer lower cabinets,Kitchen,Bottega full overlay,16,LF,450,7200,7200
+Millwork,Closet Doors,Install oak veneer closet doors,Laundry Closet,Bottega full overlay,1,SET,800,800,800
+Millwork,Medicine Cabinet,Install recessed medicine cabinet,Bathroom,30"x4"x29" by Bottega,1,EA,400,400,400
+Millwork,Floating Shelves,Install floating shelves,Living Area,Verify location in field,4,LF,75,300,300
+Countertops,Kitchen Counter,Install Silestone countertop,Kitchen,White with veining 1-1/4" thick,28,SF,85,2380,2380
+Countertops,Bathroom Shelf,Install Thassos marble shelf,Bathroom,White stone niche,2,SF,120,240,240
+Plumbing,Kitchen Sink,Install farmhouse sink,Kitchen,Signature Hardware 30" Rowena,1,EA,650,650,650
+Plumbing,Kitchen Faucet,Install kitchen faucet,Kitchen,Perrin & Rowe Holborn Chrome,1,EA,450,450,450
+Plumbing,Glass Rinser,Install glass washer/rinser,Kitchen,Delta GR-250 Chrome,1,EA,180,180,180
+Plumbing,Bathroom Lavatory,Install lavatory and vanity,Bathroom,Bottega white/glass,1,EA,800,800,800
+Plumbing,Bathroom Faucet,Install single hole faucet,Bathroom,Fantini F3402F004WU Chrome,1,EA,380,380,380
+Plumbing,Toilet,Install toilet,Bathroom,Toto Legato White,1,EA,450,450,450
+Plumbing,Shower Thermostatic Mixer,Install shower mixer rough,Bathroom,Fantini 1900D400AU Chrome,1,EA,650,650,650
+Plumbing,Shower Mixer Trim,Install shower mixer trim,Bathroom,Fantini Icona Deco 8702R700BU,1,EA,420,420,420
+Plumbing,Shower Diverter,Install 2-way diverter with volume control,Bathroom,Fantini 1900D391AU Chrome,1,EA,380,380,380
+Plumbing,Shower Head,Install shower head,Bathroom,Fantini 8602 8138UC 1.8GPM Chrome,1,EA,280,280,280
+Plumbing,Hand Shower,Install hand held shower,Bathroom,Fantini Icona Classic 8302R043U,1,EA,320,320,320
+Plumbing,Shower Pan,Install acrylic shower pan,Bathroom,MTI Alcove 30"x60",1,EA,850,850,850
+Plumbing,Shower Drain,Install linear drain,Bathroom,Infinity Drain LDQ 6-2I 6"x6",1,EA,450,450,450
+Plumbing,Hot Water Piping,Install new hot water branch piping,Kitchen/Bath,Copper with insulation,80,LF,18,1440,1440
+Plumbing,Cold Water Piping,Install new cold water branch piping,Kitchen/Bath,Copper with insulation,80,LF,16,1280,1280
+Plumbing,Waste Piping,Install new waste piping,Kitchen/Bath,PVC/ABS as required,60,LF,22,1320,1320
+Plumbing,Shut-off Valves,Install new shut-off valves,Various,Ball valves at each connection,12,EA,45,540,540
+Appliances,Dishwasher,Install new dishwasher,Kitchen,Miele G6472SCVI 18"x24"x34" panel ready,1,EA,1200,1200,1200
+Appliances,Washer Reinstall,Reinstall existing washer,Laundry Closet,Reconnect to new plumbing,1,EA,150,150,150
+Appliances,Dryer Reinstall,Reinstall existing dryer,Laundry Closet,Reconnect utilities,1,EA,100,100,100
+Electrical,New Outlets,Install new electrical outlets,Various,GFCI where required by code,15,EA,85,1275,1275
+Electrical,Continuous GFCI Plug Mold,Install under-cabinet plug mold,Kitchen,Continuous GFCI protection,12,LF,35,420,420
+Electrical,Circuit Breakers,Install new circuit breakers,Panel,For new appliances and outlets,4,EA,75,300,300
+Electrical,Electrical Rough-in,Install new electrical rough-in,Various,Conduit and wire,1,LS,1200,1200,1200
+Lighting,Recessed Downlights,Install LED recessed downlights,Various,L-1 fixtures per schedule,8,EA,120,960,960
+Lighting,Track Lighting,Install track lighting system,Kitchen,L-3A/3B/3C fixtures,3,EA,180,540,540
+Lighting,Under Cabinet Lighting,Install under cabinet LED lighting,Kitchen,L-6 linear fixtures,8,LF,45,360,360
+Lighting,Sconce Fixtures,Install wall sconce fixtures,Bathroom,L-2 fixtures per schedule,2,EA,150,300,300
+Lighting,Linear Fixtures,Install linear light fixtures,Various,L-4/L-7/L-8 per schedule,4,EA,200,800,800
+Mechanical,Exhaust Fan,Install new bathroom exhaust fan,Bathroom,Panasonic FV0511VKS3S 75 CFM,1,EA,280,280,280
+Mechanical,Ductwork,Install exhaust fan ductwork,Bathroom,Extend to new wall location,15,LF,25,375,375
+Mechanical,Louver,Install exterior louver,Bathroom,Coordinate with ductwork,1,EA,120,120,120
+Hardware,Grab Bar,Install ADA grab bar,Bathroom,Kartners 829124 24" Chrome,1,EA,180,180,180
+Hardware,Towel Rods,Reinstall existing towel rods,Bathroom,2 quantity - reuse existing,2,EA,25,50,50
+Hardware,Robe Hooks,Install robe hooks,Bathroom,2 quantity,2,EA,35,70,70
+Hardware,Door Hardware,Install door hardware,Various,Hinges handles and locks,6,SET,85,510,510
+Stairs,Stair Construction,Install new stair with metal baluster,Living Area,Wood handrail metal baluster,1,LS,2500,2500,2500
+Stairs,Stair Reinforcement,Reinforce existing wall for future stair lift,Living Area,Structural reinforcement,1,LS,800,800,800
+Paint,Ceiling Paint,Paint ceilings throughout,All Areas,Benjamin Moore Super White Matte,1200,SF,1.5,1800,1800
+Paint,Trim Paint,Paint trim throughout,All Areas,Benjamin Moore White Satin,400,LF,2,800,800
+Paint,Wall Paint - Bath,Paint bathroom walls,Bathroom,Benjamin Moore White Matte,180,SF,2,360,360
+Paint,Wall Paint - Living,Paint living/kitchen/corridor walls,Living Areas,Benjamin Moore White Eggshell,800,SF,2,1600,1600
+Paint,Wall Paint - Kitchen Garage,Paint kitchen garage,Kitchen,Benjamin Moore Green Matte #678,60,SF,2.5,150,150
+Insulation,Wall Insulation,Install Roxul AFB insulation,New Walls,In metal stud cavities,200,SF,3,600,600
+Insulation,Pipe Insulation,Insulate hot and cold water piping,Throughout,Required by code,160,LF,4,640,640
+Waterproofing,Shower Waterproofing,Install waterproof membrane system,Bathroom,Laticrete 9235 complete system,80,SF,8,640,640
+Waterproofing,Kitchen Waterproofing,Install waterproof membrane,Kitchen,Under cabinets and appliances,120,SF,6,720,720
+Permits,Building Permit,Obtain building department permits,Project,All required permits and fees,1,LS,1500,1500,1500
+Permits,Plumbing Permit,Obtain plumbing permits,Project,Filed under separate application,1,LS,800,800,800
+Permits,Electrical Permit,Obtain electrical permits,Project,All electrical work permits,1,LS,600,600,600
+General,Cleanup,Construction cleanup,Throughout,Daily and final cleanup,1,LS,800,800,800
+General,Protection,Protect existing conditions,Throughout,During construction,1,LS,500,500,500
+General,Temporary Utilities,Maintain temporary utilities,Throughout,During construction period,1,LS,400,400,400
+

@@ -1,0 +1,84 @@
+Category,Item,Description,Location,Specification,Quantity,Unit,Cost_Per_Unit,Subtotal,Total
+Demolition,Kitchen Demolition,Remove existing kitchen cabinetry soffit sink counter and wall & floor finishes,Kitchen,Complete kitchen demo,1,LS,2500,2500,2500
+Demolition,Spiral Stair Removal,Remove spiral stair and portion of landing platform,Living/Dining,Protect/salvage existing carpet at landing,1,LS,1800,1800,1800
+Demolition,Bathroom Demolition,Remove bathroom vanity wall & floor finishes,Bathroom,Save accessories - towel rod and T.T. dispenser,1,LS,1200,1200,1200
+Demolition,Window Removal,Remove window and upper portion of wall only,Bedroom,Partial wall removal,1,EA,800,800,800
+Demolition,Storage Shelving,Carefully remove storage shelving along shared wall,Living/Dining,Save for re-use,1,LS,300,300,300
+Demolition,Light Fixture Removal,Remove light fixtures,Various,Multiple locations,6,EA,75,450,450
+Demolition,Plumbing Fixture Removal,Remove existing plumbing fixtures,Kitchen/Bath,Temporary cap as required,1,LS,600,600,600
+Demolition,Appliance Disconnection,Disconnect and remove existing kitchen appliances,Kitchen,Save and protect gas oven and refrigerator,1,LS,400,400,400
+Demolition,Washer/Dryer Disconnection,Disconnect and remove existing washer and dryer,Laundry Closet,Save and protect for re-installation,1,LS,300,300,300
+Demolition,Exhaust Fan Removal,Remove existing non-functioning exhaust fan,Bathroom,Replace with new,1,EA,150,150,150
+Framing,Metal Stud Walls,3-5/8" metal stud walls with 5/8" gypsum board each side,Various,UL U419 1-hr rated partition,120,LF,45,5400,5400
+Framing,Furred Walls,2-1/2" metal stud furred wall with 5/8" gypsum board,Various,Existing wall with gyp bd furring,80,LF,35,2800,2800
+Framing,Platform Landing,Frame new platform landing,Living/Dining,Reinforce existing wall for future stair lift,1,LS,2200,2200,2200
+Framing,New Openings,Frame and finish new openings,Various,Multiple locations,4,EA,350,1400,1400
+Framing,Shower Ledge,Frame and finish new ledge at shower,Bathroom,Coordinate finish height with kitchen cabinets,1,LS,450,450,450
+Framing,Garage Cabinet Opening,Frame new opening for garage cabinet,Kitchen,Custom opening,1,EA,300,300,300
+Insulation,Wall Insulation,ROXUL AFB insulation in metal stud walls,Various,Fire-rated insulation,200,SF,3.50,700,700
+Drywall,Gypsum Board,5/8" gypsum board installation,Various,Fire-rated and moisture-resistant where required,1200,SF,2.25,2700,2700
+Drywall,Cement Board,Cement board at all tiled areas,Bathroom/Kitchen,Mold and moisture resistant,180,SF,4.50,810,810
+Drywall,Finishing,Skim sand and paint all walls & ceilings throughout,All Areas,See finish schedule,1200,SF,3.75,4500,4500
+Flooring,Wood Floor Refinishing,Sand stain and seal existing oak floors,Living/Dining/Bedroom,Minwax or approved equal 3 coats water-based sealer,650,SF,8.50,5525,5525
+Flooring,Kitchen Tile,24x24 Galaxy rectified porcelain tile,Kitchen,Tiles by Victoria white/matte,120,SF,12.50,1500,1500
+Flooring,Bathroom Tile,12x12 Retroactive 2.0 tile,Bathroom,Nemo snowblind/UPS,45,SF,15.75,708.75,708.75
+Flooring,Wood Trim,Wood trim to match existing floors,Various,Refinish to match FL-1,80,LF,18.50,1480,1480
+Flooring,Threshold,Schluter threshold tile to wood,Bathroom Entry,1/8" thickness,2,EA,125,250,250
+Tile Work,Bathroom Wall Tile,12x24 Bryce tile,Bathroom/Shower,Nemo pearle/stuta rio,180,SF,18.50,3330,3330
+Tile Work,Kitchen Backsplash,Silestone countertop material,Kitchen,White with veining polished 1-1/4" thick,25,SF,85,2125,2125
+Tile Work,Bathroom Base,6x18 bullnose base tile,Bathroom,Nemo retroactive 2.0 snowblind,20,LF,22.50,450,450
+Waterproofing,Laticrete 9235 Membrane,Waterproof membrane system,Bathroom/Kitchen,Under all wet areas,200,SF,8.75,1750,1750
+Waterproofing,Hydroban System,Laticrete Hydroban waterproofing,Shower Area,6" up adjacent walls,85,SF,12.50,1062.50,1062.50
+Cabinetry,Kitchen Upper Cabinets,White lacquer full overlay cabinets,Kitchen,Bottega custom cabinetry,18,LF,450,8100,8100
+Cabinetry,Kitchen Lower Cabinets,Oak wood veneer full overlay cabinets,Kitchen,Bottega custom cabinetry,22,LF,520,11440,11440
+Cabinetry,Storage Cabinets,Various storage and specialty cabinets,Kitchen/Living,Pull-out accessories magic corner,8,EA,650,5200,5200
+Cabinetry,Laundry Closet Doors,Oak wood veneer full overlay doors,Laundry Closet,Bottega assembly and installation,2,EA,850,1700,1700
+Countertops,Kitchen Counter,Silestone Ethereal Glow,Kitchen,1-1/4" thick polished squared edges,35,SF,125,4375,4375
+Countertops,Bathroom Shelf,Thassos marble or approved equal,Bathroom,White stone niche,2,SF,95,190,190
+Plumbing,Kitchen Sink,30" Rowena Farmhouse single basin,Kitchen,Signature Hardware white #SHF3017,1,EA,850,850,850
+Plumbing,Kitchen Faucet,Holborn kitchen faucet,Kitchen,Perrin & Rowe U.4047L-APC-2 chrome,1,EA,1250,1250,1250
+Plumbing,Soap Dispenser,Kitchen soap dispenser,Kitchen,Perrin & Rowe,1,EA,185,185,185
+Plumbing,Glass Rinser,Metal glass rinser,Kitchen,Delta GR-250 chrome,1,EA,275,275,275
+Plumbing,Bathroom Lavatory,Lavatory and vanity,Bathroom,Bottega white/glass,1,EA,1850,1850,1850
+Plumbing,Bathroom Faucet,Single hole faucet and drain,Bathroom,Fantini F3402F004WU chrome,1,EA,950,950,950
+Plumbing,Toilet,Legato toilet,Bathroom,TOTO white,1,EA,650,650,650
+Plumbing,Shower Thermostatic Mixer,Shower mixer rough and trim,Bathroom,Fantini 1900 D400AU chrome,1,EA,1450,1450,1450
+Plumbing,Shower Diverter,2-way diverter with volume control,Bathroom,Fantini 1900D391AU chrome,1,EA,850,850,850
+Plumbing,Shower Head,Fixed shower head,Bathroom,Fantini 7702 7137UC 1.8GPM chrome,1,EA,425,425,425
+Plumbing,Hand Shower,Handheld shower set,Bathroom,Fantini Icona Classic 7302 R043U,1,EA,650,650,650
+Plumbing,Shower Pan,Alcove shower pan,Bathroom,MTI 30"x60",1,EA,1250,1250,1250
+Plumbing,Shower Drain,Linear shower drain,Bathroom,Infinity Drain LDQ 7-2I 6"x6",1,EA,485,485,485
+Plumbing,Medicine Cabinet,Recessed medicine cabinet,Bathroom,Bottega 30"x4"x29",1,EA,750,750,750
+Plumbing,Grab Bar,ADA compliant grab bar,Bathroom,Kartners 72791124 24" chrome,1,EA,285,285,285
+Plumbing,Accessories,Towel rods and toilet paper dispenser,Bathroom,Re-use existing plus new robe hooks,4,EA,125,500,500
+Appliances,Dishwasher,Panel ready dishwasher,Kitchen,Miele G7472SCVI 18x24x34,1,EA,2850,2850,2850
+Appliances,Refrigerator,Existing refrigerator,Kitchen,Fisher Paykel existing,1,EA,0,0,0
+Appliances,Oven,Existing oven,Kitchen,Existing to remain,1,EA,0,0,0
+Appliances,Washer,Existing washer,Laundry,Re-install existing,1,EA,0,0,0
+Appliances,Dryer,Existing dryer,Laundry,Re-install existing,1,EA,0,0,0
+Mechanical,Exhaust Fan,Bathroom exhaust fan,Bathroom,Panasonic FV0511VKS3S 75 CFM,1,EA,385,385,385
+Mechanical,Ductwork,Extend ductwork to new wall location,Bathroom,Louver and ductwork extension,1,LS,450,450,450
+Electrical,GFCI Outlets,New GFCI outlets,Kitchen/Bathroom,Code required locations,8,EA,125,1000,1000
+Electrical,Standard Outlets,New duplex outlets,Various,Additional outlets as required,12,EA,85,1020,1020
+Electrical,Switches,New switches and dimmers,Various,Multi-way and dimmer switches,10,EA,95,950,950
+Electrical,Continuous Plug Mold,GFCI plug mold under cabinetry,Kitchen,Underside of cabinetry,12,LF,45,540,540
+Electrical,Panel Modifications,Electrical panel modifications,Service Area,Separate circuits for appliances,1,LS,850,850,850
+Lighting,Recessed Downlights,LED recessed downlights,Various,L-1 through L-8 fixtures,15,EA,185,2775,2775
+Lighting,Track Lighting,Linear track lighting,Kitchen/Living,Under cabinet and accent lighting,8,EA,225,1800,1800
+Lighting,Sconce Fixtures,Wall mounted sconces,Bathroom,L-2 bathroom sconces,2,EA,285,570,570
+Lighting,Ceiling Fan,Re-install existing ceiling fan,Bedroom,Save and protect for re-installation,1,EA,150,150,150
+Painting,Ceiling Paint,Super white matte paint,All Ceilings,Benjamin Moore,1200,SF,2.25,2700,2700
+Painting,Trim Paint,White satin paint,All Trim,Benjamin Moore,400,LF,3.50,1400,1400
+Painting,Wall Paint - Bath,White matte paint,Bathroom,Benjamin Moore,180,SF,2.75,495,495
+Painting,Wall Paint - Living,White eggshell paint,Living/Kitchen/Corridor,Benjamin Moore,800,SF,2.50,2000,2000
+Painting,Kitchen Garage Paint,Pacific Rim green matte,Kitchen Garage,Benjamin Moore #678,25,SF,3.25,81.25,81.25
+Stairs,Stair Construction,New stair and metal baluster/wood handrail,Living/Dining,Custom stair construction,1,LS,3500,3500,3500
+Stairs,Stair Refinishing,Refinish steps to match new floor,Stairs,Match new floor finish/stain,8,EA,125,1000,1000
+Windows,Interior Window,New interior window,Between Kitchen/Living,Custom installation,1,EA,1250,1250,1250
+Windows,Window Sill Refinish,Refinish window sill,Bedroom,Match new floor finish,1,EA,185,185,185
+Millwork,Custom Millwork,Doors and trim from Bottega,Various,Finish materials from Bottega,1,LS,2500,2500,2500
+Permits,Building Permits,DOB permits and inspections,Project,All required permits,1,LS,2500,2500,2500
+Permits,Plumbing Permits,Plumbing permits and inspections,Project,Separate plumbing application,1,LS,1200,1200,1200
+General,Cleanup,Construction cleanup,All Areas,Daily and final cleanup,1,LS,1500,1500,1500
+General,Protection,Temporary protection,All Areas,Protect existing finishes,1,LS,800,800,800
+
